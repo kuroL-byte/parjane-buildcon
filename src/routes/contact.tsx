@@ -1,0 +1,164 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { brand } from "@/theme";
+import { images, faqs } from "@/data/content";
+import { PageHero } from "@/components/PageHero";
+import { SectionWrapper, Container, Hairline } from "@/components/Container";
+import { SectionHeading } from "@/components/SectionHeading";
+import { AnimatedSection } from "@/components/AnimatedSection";
+import { EnquiryForm } from "@/components/EnquiryForm";
+import { Accordion } from "@/components/Accordion";
+import { OfficeCards } from "@/components/common/OfficeCards";
+import { MessageSquare } from "lucide-react";
+
+export const Route = createFileRoute("/contact")({
+  head: () => ({
+    meta: [
+      { title: "Contact Us — Parjane Buildcon LLP" },
+      {
+        name: "description",
+        content:
+          "Connect with Parjane Buildcon LLP. Registered office in CBD Belapur, with branch offices in Taloja and Panvel. Enquiries answered promptly.",
+      },
+      { property: "og:title", content: "Contact Us — Parjane Buildcon LLP" },
+      {
+        property: "og:description",
+        content: "Schedule a private site viewing or request project specifications kit across Navi Mumbai and Panvel.",
+      },
+    ],
+  }),
+  component: Contact,
+});
+
+function Contact() {
+  return (
+    <>
+      <PageHero
+        eyebrow="Presence Across Navi Mumbai &amp; Panvel"
+        title="Connect With Our Team Across Navi Mumbai &amp; Panvel."
+        lede="Our sales directors and senior project engineers are available six days a week across our CBD Belapur, Taloja, and Panvel offices."
+        image={images.clubhouse}
+      />
+
+      {/* ── 3-Column Office Locations ── */}
+      <SectionWrapper>
+        <div className="rounded-2xl border border-white/20 bg-neutral-950/30 backdrop-blur-xl p-6 sm:p-8 shadow-2xl mb-8">
+          <SectionHeading
+            eyebrow="Presence &amp; Locations"
+            title="Our Three Operating Offices"
+            lede="Registered headquarters in CBD Belapur, branch office in Taloja Phase 2, and sales office in Panvel."
+          />
+        </div>
+        <OfficeCards />
+      </SectionWrapper>
+
+      <Container>
+        <Hairline />
+      </Container>
+
+      <SectionWrapper>
+        <div className="grid gap-8 lg:grid-cols-[1.15fr_1fr] lg:gap-12">
+          {/* Form */}
+          <AnimatedSection className="rounded-3xl border border-white/20 bg-neutral-950/30 backdrop-blur-xl p-6 sm:p-8 shadow-2xl">
+            <p className="eyebrow text-amber-400 font-bold mb-1.5 text-[10px]">Direct Enquiry</p>
+            <h2 className="font-display text-xl sm:text-2xl font-bold text-white leading-tight drop-shadow-sm">
+              Let's Discuss Your Landmark Requirements.
+            </h2>
+            <div className="mt-5">
+              <EnquiryForm />
+            </div>
+          </AnimatedSection>
+
+          {/* Details */}
+          <AnimatedSection delay={120} className="flex flex-col justify-between rounded-3xl border border-white/20 bg-neutral-950/30 backdrop-blur-xl p-6 sm:p-8 shadow-2xl">
+            <div>
+              <p className="eyebrow text-amber-400 font-bold mb-1.5 text-[10px]">Registered Headquarters</p>
+              <address className="space-y-0.5 text-xs sm:text-sm font-normal not-italic text-slate-100">
+                {brand.address.map((line) => (
+                  <p key={line}>{line}</p>
+                ))}
+              </address>
+
+              <dl className="mt-4 divide-y divide-white/12 border-y border-white/12">
+                {[
+                  {
+                    label: "Telephone",
+                    value: brand.phone,
+                    href: `tel:${brand.phone.replace(/\s/g, "")}`,
+                  },
+                  { label: "Email", value: brand.email, href: `mailto:${brand.email}` },
+                  { label: "Office Hours", value: brand.hours },
+                ].map((row) => (
+                  <div key={row.label} className="grid gap-1 py-2.5 sm:grid-cols-[7rem_1fr] sm:gap-4">
+                    <dt className="text-[10px] uppercase tracking-wider font-semibold text-slate-300">
+                      {row.label}
+                    </dt>
+                    <dd className="text-xs sm:text-sm font-bold text-white">
+                      {row.href ? (
+                        <a href={row.href} className="text-amber-400 hover:underline">
+                          {row.value}
+                        </a>
+                      ) : (
+                        row.value
+                      )}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+
+              <div className="mt-5 flex flex-wrap gap-3">
+                <a
+                  href={`https://wa.me/${brand.whatsapp}`}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="inline-flex h-10 items-center gap-2 rounded-xl bg-emerald-600 px-4 text-[11px] uppercase font-bold tracking-wider text-white shadow-md transition-all hover:bg-emerald-500 hover:scale-105"
+                >
+                  <MessageSquare className="size-4 shrink-0 fill-white" />
+                  <span>WhatsApp Sales Desk</span>
+                </a>
+                {brand.socials.map((s) => (
+                  <a
+                    key={s.label}
+                    href={s.href}
+                    target="_blank"
+                    rel="noreferrer"
+                    className="inline-flex h-10 items-center px-3 text-[11px] uppercase font-bold tracking-wider text-slate-200 hover:text-amber-400 transition-colors"
+                  >
+                    <span>{s.label}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+
+            <div className="mt-6 aspect-4/3 w-full overflow-hidden rounded-2xl border border-white/15 shadow-lg">
+              <iframe
+                title="Map to Parjane Buildcon Registered Office"
+                src="https://www.google.com/maps?q=Bhagyeshree%20Apartments%2C%20Sector%2029%2C%20Agroli%2C%20CBD%20Belapur%2C%20Navi%20Mumbai&output=embed"
+                loading="lazy"
+                referrerPolicy="no-referrer-when-downgrade"
+                className="h-full w-full grayscale-[0.2]"
+              />
+            </div>
+          </AnimatedSection>
+        </div>
+      </SectionWrapper>
+
+      <Container>
+        <Hairline />
+      </Container>
+
+      {/* ── FAQs Section ─────────────────────────────────────────── */}
+      <SectionWrapper>
+        <div className="rounded-2xl border border-white/20 bg-neutral-950/30 backdrop-blur-xl p-6 sm:p-8 shadow-2xl mb-8">
+          <SectionHeading
+            eyebrow="Frequently Asked Questions"
+            title="Common Buyer &amp; Investor Questions"
+            lede="Clear answers regarding MahaRERA certifications, customization, payment milestones, and possession schedules."
+          />
+        </div>
+        <div className="rounded-2xl border border-white/20 bg-neutral-950/30 backdrop-blur-xl p-6 sm:p-8 shadow-2xl">
+          <Accordion items={faqs.map((f) => ({ title: f.q, content: f.a }))} />
+        </div>
+      </SectionWrapper>
+    </>
+  );
+}

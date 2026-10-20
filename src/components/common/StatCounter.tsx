@@ -1,0 +1,80 @@
+import { useEffect, useRef, useState } from "react";
+import { cn } from "@/lib/utils";
+
+/** Counts up from 0 to `value` when scrolled into view. */
+export function StatCounter({
+  value,
+  suffix = "",
+  label,
+  decimals = 0,
+  duration = 1800,
+  displayOverride,
+  className,
+}: {
+  value: number;
+  suffix?: string;
+  label: string;
+  decimals?: number;
+  duration?: number;
+  displayOverride?: string;
+  className?: string;
+}) {
+  const ref = useRef<HTMLDivElement>(null);
+  const [display, setDisplay] = useState(0);
+
+  useEffect(() => {
+    const node = ref.current;
+    if (!node) return;
+
+    let raf = 0;
+    const run = () => {
+      const start = performance.now();
+      const tick = (now: number) => {
+        const t = Math.min((now - start) / duration, 1);
+        // easeOutExpo — decelerating, never overshooting
+        const eased = t === 1 ? 1 : 1 - Math.pow(2, -10 * t);
+        setDisplay(value * eased);
+        if (t < 1) raf = requestAnimationFrame(tick);
+      };
+      raf = requestAnimationFrame(tick);
+    };
+
+    if (typeof IntersectionObserver === "undefined") {
+      setDisplay(value);
+      return;
+    }
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry?.isIntersecting) {
+          run();
+          observer.disconnect();
+        }
+      },
+      { threshold: 0.4 },
+    );
+    observer.observe(node);
+    return () => {
+      observer.disconnect();
+      cancelAnimationFrame(raf);
+    };
+  }, [value, duration]);
+
+  return (
+    <div ref={ref} className={cn("text-center sm:text-left", className)}>
+      <div className="font-display text-[clamp(2rem,3.8vw,3rem)] font-bold leading-none tabular-nums text-white drop-shadow-sm">
+        {displayOverride ? (
+          <span className="text-white">{displayOverride}</span>
+        ) : (
+          <>
+            {display.toFixed(decimals)}
+            <span className="text-amber-300">{suffix}</span>
+          </>
+        )}
+      </div>
+      <div className="mt-2.5 h-0.5 w-8 bg-amber-400 max-sm:mx-auto" />
+      <p className="mt-2.5 text-[10px] uppercase tracking-[0.2em] font-semibold text-slate-300">
+        {label}
+      </p>
+    </div>
+  );
+}
