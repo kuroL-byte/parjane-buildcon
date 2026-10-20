@@ -9,11 +9,6 @@ import bayfront3d from "@/assets/parjane_bayfront_3d.png";
 import grandeur3d from "@/assets/parjane_grandeur_3d.png";
 
 
-// ── DEDICATED PROJECT ASSETS (NO REPETITION) ───────────────────
-import nextAddressElevation from "@/assets/projects/Residential_tower_in_Navi_Mumbai_20261020235028.jpg";
-import nextAddressLobby from "@/assets/projects/Lobby_architecture_at_The_Next_20261020235028.jpg";
-import nextAddressPool from "@/assets/projects/Rooftop_infinity_pool_and_deck_20261020235028.jpg";
-import nextAddressInterior from "@/assets/projects/Modern_living_hall_interior_20261020235028.jpg";
 
 import neeloraAerial from "@/assets/projects/Aerial_view_of_residential_towers_20261020235028.jpg";
 import neeloraClubhouse from "@/assets/projects/Clubhouse_exterior_of_Neelora_to__20261020235028.jpg";
@@ -128,43 +123,6 @@ export interface Project {
 
 export const projects: Project[] = [
   // ── UPCOMING PIPELINE PROJECTS ───────────────────────────────
-  {
-    slug: "the-next-address",
-    name: "The Next Address",
-    location: "Ghot, Navi Mumbai",
-    node: "Ghot",
-    filterCategories: ["Upcoming"],
-    status: "Upcoming",
-    type: "Residential Development",
-    area: "650 – 1,250 sq. ft.",
-    scale: "350+ Units",
-    completion: "Pipeline / Pre-Launch",
-    image: nextAddressElevation,
-    summary:
-      "A 350+ unit master-planned residential community in Ghot designed for contemporary family living with expansive landscaped podiums and rapid transit access.",
-    overview: [
-      "The Next Address represents Parjane Buildcon LLP's next-generation residential launch in the rapidly advancing node of Ghot. Spanning over 350 modern apartments, the development combines contractor-grade engineering durability with thoughtful spatial layouts.",
-      "Residents will benefit from integrated civic infrastructure, dedicated vehicular circulation corridors, landscaped recreational greens, and proximity to upcoming Navi Mumbai metro and highway arteries.",
-    ],
-    specs: [
-      { label: "Project Scale", value: "350+ Residential Units" },
-      { label: "Typology", value: "1, 2 & 3 BHK Modern Residences" },
-      { label: "Location", value: "Ghot, Navi Mumbai" },
-      { label: "Development Type", value: "Master-Planned Residential" },
-      { label: "Status", value: "Upcoming Pipeline" },
-      { label: "Execution Standard", value: "RCC Shear Wall Technology" },
-    ],
-    amenities: [
-      "Landscaped recreation podium",
-      "Dedicated children's play park",
-      "Fitness center & yoga deck",
-      "Multi-tier 24/7 security & CCTV",
-      "Rainwater harvesting & STP",
-      "Ample resident & visitor parking",
-    ],
-    gallery: [nextAddressElevation, nextAddressLobby, nextAddressPool, nextAddressInterior],
-    mapQuery: "Ghot, Navi Mumbai, Maharashtra",
-  },
   {
     slug: "neelora",
     name: "Neelora",
@@ -671,10 +629,10 @@ export const stats = [
     description: "Across Agroli, CBD Belapur, Panvel, and Karanjade",
   },
   {
-    value: 1500,
+    value: 1180,
     suffix: "+",
     label: "Pipeline Units",
-    description: "Across 4 upcoming pipeline developments",
+    description: "Across upcoming pipeline developments",
   },
   {
     value: 5,
@@ -790,7 +748,7 @@ export const milestones = [
   {
     year: "Ahead",
     title: "Next-Gen Pipeline & Prime Redevelopment",
-    body: "Next-generation launches in Ghot (The Next Address, Neelora) and prime urban redevelopment undertakings in Kharghar Sector 12 and Panvel.",
+    body: "Next-generation launch in Ghot (Neelora) and prime urban redevelopment undertakings in Kharghar Sector 12 and Panvel.",
   },
 ];
 
@@ -907,7 +865,7 @@ export const faqs = [
   },
   {
     q: "Where are the upcoming pipeline projects located?",
-    a: "Our upcoming pipeline comprises 1,500+ residential units across Ghot (The Next Address with 350+ units, and Neelora with 1,000+ units), alongside prime urban redevelopment undertakings in Kharghar Sector 12 and Panvel.",
+    a: "Our upcoming pipeline comprises 1,180+ residential units across Ghot (Neelora with 1,000+ units), alongside prime urban redevelopment undertakings in Kharghar Sector 12 and Panvel.",
   },
   {
     q: "Where are Parjane Buildcon LLP's registered and branch offices located?",

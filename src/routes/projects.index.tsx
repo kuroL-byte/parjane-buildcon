@@ -46,7 +46,7 @@ function ProjectsIndex() {
     <>
       <PageHero
         eyebrow="Verified Portfolio"
-        title="16 Landmarks Across Navi Mumbai &amp; Panvel."
+        title={`${projects.length} Landmarks Across Navi Mumbai & Panvel.`}
         lede="Explore master-planned township phases, delivered residential apartment communities, and upcoming high-potential redevelopments."
         image={images.project2}
       />
