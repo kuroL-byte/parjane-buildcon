@@ -23,6 +23,15 @@ export const images = {
   horizon: horizon3d,
   bayfront: bayfront3d,
   grandeur: grandeur3d,
+  crestVillas3d,
+  droneTownship3d,
+  hero3d,
+  commercial3d,
+  pool3d,
+  gym3d,
+  horizon3d,
+  bayfront3d,
+  grandeur3d,
 };
 
 export type ProjectStatus = "Ongoing" | "Upcoming" | "Completed";
