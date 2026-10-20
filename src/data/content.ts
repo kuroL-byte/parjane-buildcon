@@ -138,7 +138,7 @@ export const projects: Project[] = [
   },
   {
     slug: "kharghar-sector-12-redevelopment",
-    name: "Kharghar Sector 12 Redevelopment",
+    name: "Kharghar Sector 12 Redevelopment Project",
     location: "Sector 12, Kharghar, Navi Mumbai",
     node: "Kharghar",
     filterCategories: ["Upcoming"],
