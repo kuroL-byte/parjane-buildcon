@@ -39,7 +39,7 @@ export function ProjectCard({ project, index = 0 }: { project: Project; index?: 
           height={960}
           wrapperClassName="h-full w-full"
           className="transition-transform duration-700 ease-out group-hover:scale-105"
-          priority={index === 0}
+          priority={index < 6}
         />
         <div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent opacity-90" />
 

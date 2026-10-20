@@ -8,6 +8,71 @@ import horizon3d from "@/assets/parjane_horizon_3d.png";
 import bayfront3d from "@/assets/parjane_bayfront_3d.png";
 import grandeur3d from "@/assets/parjane_grandeur_3d.png";
 
+
+// ── DEDICATED PROJECT ASSETS (NO REPETITION) ───────────────────
+import nextAddressElevation from "@/assets/projects/Residential_tower_in_Navi_Mumbai_20261020235028.jpg";
+import nextAddressLobby from "@/assets/projects/Lobby_architecture_at_The_Next_20261020235028.jpg";
+import nextAddressPool from "@/assets/projects/Rooftop_infinity_pool_and_deck_20261020235028.jpg";
+import nextAddressInterior from "@/assets/projects/Modern_living_hall_interior_20261020235028.jpg";
+
+import neeloraAerial from "@/assets/projects/Aerial_view_of_residential_towers_20261020235028.jpg";
+import neeloraClubhouse from "@/assets/projects/Clubhouse_exterior_of_Neelora_to__20261020235028.jpg";
+import neeloraPromenade from "@/assets/projects/Convenience_shopping_promenade_a__20261020235028.jpg";
+import neeloraInterior from "@/assets/projects/Modern_living_hall_interior_view_20261020235028.jpg";
+
+import khargharElevation from "@/assets/projects/Modern_residential_tower_exterior_20261020235028.jpg";
+import khargharDropoff from "@/assets/projects/Vehicular_drop-off_porch_and_gate_20261020235028.jpg";
+import khargharInterior from "@/assets/projects/Modern_bedroom_with_skyline_view_20261020235028.jpg";
+
+import panvelRedevElevation from "@/assets/projects/Modern_residential_tower_in_Mumbai_20261020235028.jpg";
+import panvelRedevLobby from "@/assets/projects/Lobby_interior_design_Panvel_Red__20261020235028.jpg";
+import panvelRedevInterior from "@/assets/projects/Living_and_dining_space_interior_20261020235028.jpg";
+
+import hirkaniElevation from "@/assets/projects/Apartment_building_exterior_view_20261020235028.jpg";
+import hirkaniEntrance from "@/assets/projects/Hirkani_building_entrance_parkin__20261020235028.jpg";
+import hirkaniInterior from "@/assets/projects/Apartment_living_room_interior_20261020235028.jpg";
+
+import bhagyashriElevation from "@/assets/projects/Bhagyashri_residential_building___20261020235028.jpg";
+import bhagyashriEntrance from "@/assets/projects/Bhagyashri_building_entrance_foyer_20261020235028.jpg";
+import bhagyashriInterior from "@/assets/projects/Apartment_living_room_interior_view_20261020235028.jpg";
+
+import panchshilaElevation from "@/assets/projects/Exterior_of_Panchshila_building_20261020235028.jpg";
+import panchshilaLobby from "@/assets/projects/Entrance_lobby_of_Panchshila_bui__20261020235028.jpg";
+import panchshilaInterior from "@/assets/projects/Dining_and_living_area_interior_20261020235028.jpg";
+
+import gangotriElevation from "@/assets/projects/Gangotri_residential_apartments___20261020235028.jpg";
+import gangotriLobby from "@/assets/projects/Building_entrance_lobby_and_parking_20261020235028.jpg";
+import gangotriInterior from "@/assets/projects/Living_room_interior_view_20261020235028.jpg";
+
+import mathuraElevation from "@/assets/projects/Mathura_apartment_building_exterior_20261020235028.jpg";
+import mathuraGate from "@/assets/projects/Mathura_building_entry_gate_pers__20261020235028.jpg";
+import mathuraBalcony from "@/assets/projects/Balcony_overlooking_tree-lined_s__20261020235028.jpg";
+
+import shantiElevation from "@/assets/projects/Exterior_of_Shanti_apartment_com__20261020235028.jpg";
+import shantiLobby from "@/assets/projects/Residential_lift_lobby_interior_20261020235028.jpg";
+import shantiInterior from "@/assets/projects/Living_room_overlooking_green_hills_20261020235028.jpg";
+
+import sukhshant1Township from "@/assets/projects/Residential_township_exterior_re__20261020235028.jpg";
+import sukhshant1Park from "@/assets/projects/Garden_park_with_paths_and_20261020235028.jpg";
+import sukhshant1Interior from "@/assets/projects/Apartment_living_room_overlookin__20261020235028.jpg";
+
+import sukhshant2Aerial from "@/assets/projects/Aerial_view_of_residential_township_20261020235028.jpg";
+import sukhshant2Garden from "@/assets/projects/Landscape_garden_with_reflection__20261020235028.jpg";
+import sukhshant2Interior from "@/assets/projects/Living_room_interior_with_furniture_20261020235028.jpg";
+
+import mangalResidencyElevation from "@/assets/projects/Modern_residential_complex_exterior_20261020235028.jpg";
+import mangalResidencyEntrance from "@/assets/projects/Mangal_Murti_Residency_front_ent__20261020235028.jpg";
+import mangalResidencyGallery from "@/assets/projects/Apartment_buildings_exterior_pho__20261020235028.jpg";
+
+import mangalNiwasElevation from "@/assets/projects/Residential_apartment_building_e__20261020235028.jpg";
+import mangalNiwasBedroom from "@/assets/projects/Master_bedroom_with_bed_and_20261020235028.jpg";
+import mangalNiwasFitness from "@/assets/projects/Residential_fitness_centre_and_l__20261020235028.jpg";
+
+import mangalAdhisthanElevation from "@/assets/projects/Building_exterior_of_Mangal_Murt__20261020235028.jpg";
+import mangalAdhisthanGarden from "@/assets/projects/Apartments_exterior_with_garden_20261020235028.jpg";
+
+import luxuryLobby3d from "@/assets/parjane_luxury_lobby.png";
+
 export const images = {
   hero: hero3d,
   project1: droneTownship3d,
@@ -74,7 +139,7 @@ export const projects: Project[] = [
     area: "650 – 1,250 sq. ft.",
     scale: "350+ Units",
     completion: "Pipeline / Pre-Launch",
-    image: images.project1,
+    image: nextAddressElevation,
     summary:
       "A 350+ unit master-planned residential community in Ghot designed for contemporary family living with expansive landscaped podiums and rapid transit access.",
     overview: [
@@ -97,7 +162,7 @@ export const projects: Project[] = [
       "Rainwater harvesting & STP",
       "Ample resident & visitor parking",
     ],
-    gallery: [images.project1, images.interior1, images.pool, images.clubhouse],
+    gallery: [nextAddressElevation, nextAddressLobby, nextAddressPool, nextAddressInterior],
     mapQuery: "Ghot, Navi Mumbai, Maharashtra",
   },
   {
@@ -111,7 +176,7 @@ export const projects: Project[] = [
     area: "580 – 1,180 sq. ft.",
     scale: "1,000+ Units",
     completion: "Pipeline / Pre-Launch",
-    image: images.hero,
+    image: neeloraAerial,
     summary:
       "A flagship residential township comprising 1,000+ homes in Ghot, bringing vibrant community living, self-contained conveniences, and lasting construction quality.",
     overview: [
@@ -133,7 +198,7 @@ export const projects: Project[] = [
       "High-speed passenger elevators",
       "Convenience retail plaza",
     ],
-    gallery: [images.hero, images.project1, images.garden, images.gym],
+    gallery: [neeloraAerial, neeloraClubhouse, neeloraPromenade, neeloraInterior],
     mapQuery: "Ghot, Navi Mumbai, Maharashtra",
   },
   {
@@ -147,7 +212,7 @@ export const projects: Project[] = [
     area: "850 – 1,450 sq. ft.",
     scale: "80+ Units",
     completion: "Planning & Approvals",
-    image: images.construction,
+    image: khargharElevation,
     summary:
       "A high-profile urban regeneration project in mature Kharghar Sector 12, transforming a legacy neighborhood into 80+ modern, durable residences with zero disruption to resident harmony.",
     overview: [
@@ -169,7 +234,7 @@ export const projects: Project[] = [
       "Advanced firefighting infrastructure",
       "Dedicated society management office",
     ],
-    gallery: [images.construction, images.project2, images.interior1],
+    gallery: [khargharElevation, khargharDropoff, khargharInterior],
     mapQuery: "Sector 12, Kharghar, Navi Mumbai",
   },
   {
@@ -183,7 +248,7 @@ export const projects: Project[] = [
     area: "750 – 1,350 sq. ft.",
     scale: "100+ Units",
     completion: "Approvals & Planning",
-    image: images.project2,
+    image: panvelRedevElevation,
     summary:
       "A transformative 100+ unit redevelopment initiative in the historic urban core of Panvel, bringing state-of-the-art living to a mature, amenity-rich precinct.",
     overview: [
@@ -203,7 +268,7 @@ export const projects: Project[] = [
       "CCTV surveillance in common zones",
       "Rainwater recharge pits",
     ],
-    gallery: [images.project2, images.hero, images.interior1],
+    gallery: [panvelRedevElevation, panvelRedevLobby, panvelRedevInterior],
     mapQuery: "Panvel, Navi Mumbai, Maharashtra",
   },
 
@@ -218,7 +283,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "Built to Specification",
     completion: "Delivered 1999",
-    image: images.bayfront,
+    image: hirkaniElevation,
     summary:
       "A pioneering residential apartment block delivered in 1999, marking Parjane's early expansion into prime GES Agroli, Sector 29.",
     overview: [
@@ -237,7 +302,7 @@ export const projects: Project[] = [
       "Ample ground floor parking",
       "Reliable electrical infrastructure",
     ],
-    gallery: [images.bayfront, images.interior1],
+    gallery: [hirkaniElevation, hirkaniEntrance, hirkaniInterior],
     mapQuery: "Sector 29, Agroli, CBD Belapur, Navi Mumbai",
   },
   {
@@ -250,7 +315,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "Built to Specification",
     completion: "Delivered 2000",
-    image: images.grandeur,
+    image: bhagyashriElevation,
     summary:
       "Completed at the turn of the millennium, Bhagyashri Apartment also hosts Parjane Buildcon LLP's registered corporate office in Sector 29.",
     overview: [
@@ -269,7 +334,7 @@ export const projects: Project[] = [
       "Paved vehicular driveway",
       "24/7 security watch",
     ],
-    gallery: [images.grandeur, images.interior1],
+    gallery: [bhagyashriElevation, bhagyashriEntrance, bhagyashriInterior],
     mapQuery: "Sector 29, Agroli, CBD Belapur, Navi Mumbai",
   },
   {
@@ -282,7 +347,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "Consolidated Multi-Plot",
     completion: "Delivered 2005",
-    image: images.horizon,
+    image: panchshilaElevation,
     summary:
       "A consolidated 3-plot development in Sector 29 Agroli, showcasing Parjane's capability in amalgamating plots for superior residential planning.",
     overview: [
@@ -301,7 +366,7 @@ export const projects: Project[] = [
       "Dedicated water filtration supply",
       "Landscaped entry planter boxes",
     ],
-    gallery: [images.horizon, images.project3],
+    gallery: [panchshilaElevation, panchshilaLobby, panchshilaInterior],
     mapQuery: "Sector 29, Agroli, CBD Belapur, Navi Mumbai",
   },
   {
@@ -314,7 +379,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "Dual Plot Footprint",
     completion: "Delivered 2007",
-    image: images.crestVillas3d,
+    image: gangotriElevation,
     summary:
       "A dual-plot residential project delivered in 2007, continuing Parjane's proven track record of quality residential delivery in CBD Belapur.",
     overview: [
@@ -331,7 +396,7 @@ export const projects: Project[] = [
       "Covered scooter & car parking",
       "Full municipal water connectivity",
     ],
-    gallery: [images.crestVillas3d, images.interior1],
+    gallery: [gangotriElevation, gangotriLobby, gangotriInterior],
     mapQuery: "Sector 29, Agroli, CBD Belapur, Navi Mumbai",
   },
 
@@ -346,7 +411,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "Dual Plot",
     completion: "Delivered 2001",
-    image: images.project1,
+    image: mathuraElevation,
     summary:
       "A premier apartment block in Sector 20 Belapur, completed in 2001 with robust construction and convenient access to commercial nodes.",
     overview: [
@@ -362,7 +427,7 @@ export const projects: Project[] = [
       "Overhead water tank storage",
       "Individual utility metering",
     ],
-    gallery: [images.project1, images.interior1],
+    gallery: [mathuraElevation, mathuraGate, mathuraBalcony],
     mapQuery: "Sector 20, CBD Belapur, Navi Mumbai",
   },
   {
@@ -375,7 +440,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "Built to Specification",
     completion: "Delivered 2003",
-    image: images.bayfront,
+    image: shantiElevation,
     summary:
       "A boutique residential building delivered in 2003 on Plot G-16, celebrated for clean execution, strong construction, and low maintenance.",
     overview: [
@@ -391,7 +456,7 @@ export const projects: Project[] = [
       "Full water supply arrangement",
       "Dedicated parking bays",
     ],
-    gallery: [images.bayfront, images.interior1],
+    gallery: [shantiElevation, shantiLobby, shantiInterior],
     mapQuery: "Sector 20, CBD Belapur, Navi Mumbai",
   },
 
@@ -406,7 +471,7 @@ export const projects: Project[] = [
     type: "Township Development",
     area: "Multi-Building Township",
     completion: "Delivered 2015",
-    image: images.droneTownship3d,
+    image: sukhshant1Township,
     summary:
       "Phase I of Parjane's master-planned township in Usarl Khurd, Panvel, delivering coordinated community infrastructure and comfortable family homes.",
     overview: [
@@ -426,7 +491,7 @@ export const projects: Project[] = [
       "24/7 water supply & storage",
       "Street lighting across township",
     ],
-    gallery: [images.droneTownship3d, images.garden, images.interior1],
+    gallery: [sukhshant1Township, sukhshant1Park, sukhshant1Interior],
     mapQuery: "Usarl Khurd, Panvel, Maharashtra",
   },
   {
@@ -439,7 +504,7 @@ export const projects: Project[] = [
     type: "Township Development",
     area: "Phases II, III, IV & V",
     completion: "Delivered 2025",
-    image: images.hero,
+    image: sukhshant2Aerial,
     summary:
       "A monumental 10-year execution journey culminating in the delivery of Phases II through V, completing a flourishing residential township at Usarl Khurd.",
     overview: [
@@ -459,7 +524,7 @@ export const projects: Project[] = [
       "Efficient drainage & STP systems",
       "Spacious covered vehicle parking",
     ],
-    gallery: [images.hero, images.droneTownship3d, images.garden],
+    gallery: [sukhshant2Aerial, sukhshant2Garden, sukhshant2Interior],
     mapQuery: "Usarl Khurd, Panvel, Maharashtra",
   },
 
@@ -474,7 +539,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "G + 4 / G + 7 Storey",
     completion: "Delivered 2021",
-    image: images.grandeur,
+    image: mangalResidencyElevation,
     summary:
       "Delivered in 2021 in Karanjade Sector 1, Mangal Murti Residency initiated Parjane's prestigious four-project series in the node.",
     overview: [
@@ -493,7 +558,7 @@ export const projects: Project[] = [
       "Power backup for common areas",
       "24/7 water storage facility",
     ],
-    gallery: [images.grandeur, images.interior1],
+    gallery: [mangalResidencyElevation, mangalResidencyEntrance, mangalResidencyGallery],
     mapQuery: "Sector 1, Karanjade, Panvel, Navi Mumbai",
   },
   {
@@ -506,7 +571,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "Modern Residential Block",
     completion: "Delivered 2021",
-    image: images.horizon,
+    image: mangalNiwasElevation,
     summary:
       "Completed in 2021 on Plot No. 303 in Sector R3 Karanjade, offering well-ventilated residences with prime road frontage.",
     overview: [
@@ -523,7 +588,7 @@ export const projects: Project[] = [
       "Attractive facade design",
       "Dedicated fire-safety systems",
     ],
-    gallery: [images.horizon, images.interior1],
+    gallery: [mangalNiwasElevation, mangalNiwasBedroom, mangalNiwasFitness],
     mapQuery: "Sector R3, Karanjade, Panvel, Navi Mumbai",
   },
   {
@@ -536,7 +601,7 @@ export const projects: Project[] = [
     type: "Residential",
     area: "Corner Plot Development",
     completion: "Delivered 2022",
-    image: images.bayfront,
+    image: mangalAdhisthanElevation,
     summary:
       "A corner-plot residential landmark handed over in 2022 on Plot No. 3, Sector R4 Karanjade, providing dual-road frontage and open vistas.",
     overview: [
@@ -555,7 +620,7 @@ export const projects: Project[] = [
       "Vitrified flooring in all flats",
       "Granite kitchen platforms with SS sinks",
     ],
-    gallery: [images.bayfront, images.interior1],
+    gallery: [mangalAdhisthanElevation, mangalAdhisthanGarden, images.bayfront],
     mapQuery: "Sector R4, Karanjade, Panvel, Navi Mumbai",
   },
   {
@@ -586,7 +651,7 @@ export const projects: Project[] = [
       "Intercom facility",
       "Overhead & underground water reservoirs",
     ],
-    gallery: [images.crestVillas3d, images.interior1],
+    gallery: [images.crestVillas3d, luxuryLobby3d, images.hero],
     mapQuery: "Sector R3, Karanjade, Panvel, Navi Mumbai",
   },
 ];
