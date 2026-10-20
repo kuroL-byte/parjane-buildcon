@@ -113,6 +113,7 @@ export interface Project {
   scale?: string;
   completion: string;
   image: string;
+  video?: string;
   summary: string;
   overview: string[];
   specs: { label: string; value: string }[];
@@ -135,6 +136,7 @@ export const projects: Project[] = [
     scale: "1,000+ Units",
     completion: "Pipeline / Pre-Launch",
     image: neeloraAerial,
+    video: "/videos/projects/neelora.mp4",
     summary:
       "A flagship residential township comprising 1,000+ homes in Ghot, bringing vibrant community living, self-contained conveniences, and lasting construction quality.",
     overview: [
@@ -171,6 +173,7 @@ export const projects: Project[] = [
     scale: "80+ Units",
     completion: "Planning & Approvals",
     image: khargharElevation,
+    video: "/videos/projects/kharghar-sector-12.mp4",
     summary:
       "A high-profile urban regeneration project in mature Kharghar Sector 12, transforming a legacy neighborhood into 80+ modern, durable residences with zero disruption to resident harmony.",
     overview: [
@@ -207,6 +210,7 @@ export const projects: Project[] = [
     scale: "100+ Units",
     completion: "Approvals & Planning",
     image: panvelRedevElevation,
+    video: "/videos/projects/panvel-redevelopment.mp4",
     summary:
       "A transformative 100+ unit redevelopment initiative in the historic urban core of Panvel, bringing state-of-the-art living to a mature, amenity-rich precinct.",
     overview: [
@@ -242,6 +246,7 @@ export const projects: Project[] = [
     area: "Built to Specification",
     completion: "Delivered 1999",
     image: hirkaniElevation,
+    video: "/videos/projects/hirkani.mp4",
     summary:
       "A pioneering residential apartment block delivered in 1999, marking Parjane's early expansion into prime GES Agroli, Sector 29.",
     overview: [
@@ -274,6 +279,7 @@ export const projects: Project[] = [
     area: "Built to Specification",
     completion: "Delivered 2000",
     image: bhagyashriElevation,
+    video: "/videos/projects/bhagyashri.mp4",
     summary:
       "Completed at the turn of the millennium, Bhagyashri Apartment also hosts Parjane Buildcon LLP's registered corporate office in Sector 29.",
     overview: [
@@ -306,6 +312,7 @@ export const projects: Project[] = [
     area: "Consolidated Multi-Plot",
     completion: "Delivered 2005",
     image: panchshilaElevation,
+    video: "/videos/projects/panchshila.mp4",
     summary:
       "A consolidated 3-plot development in Sector 29 Agroli, showcasing Parjane's capability in amalgamating plots for superior residential planning.",
     overview: [
@@ -338,6 +345,7 @@ export const projects: Project[] = [
     area: "Dual Plot Footprint",
     completion: "Delivered 2007",
     image: gangotriElevation,
+    video: "/videos/projects/gangotri.mp4",
     summary:
       "A dual-plot residential project delivered in 2007, continuing Parjane's proven track record of quality residential delivery in CBD Belapur.",
     overview: [
@@ -370,6 +378,7 @@ export const projects: Project[] = [
     area: "Dual Plot",
     completion: "Delivered 2001",
     image: mathuraElevation,
+    video: "/videos/projects/mathura.mp4",
     summary:
       "A premier apartment block in Sector 20 Belapur, completed in 2001 with robust construction and convenient access to commercial nodes.",
     overview: [
@@ -399,6 +408,7 @@ export const projects: Project[] = [
     area: "Built to Specification",
     completion: "Delivered 2003",
     image: shantiElevation,
+    video: "/videos/projects/shanti.mp4",
     summary:
       "A boutique residential building delivered in 2003 on Plot G-16, celebrated for clean execution, strong construction, and low maintenance.",
     overview: [
@@ -430,6 +440,7 @@ export const projects: Project[] = [
     area: "Multi-Building Township",
     completion: "Delivered 2015",
     image: sukhshant1Township,
+    video: "/videos/projects/sukhshant-nagar-phase-1.mp4",
     summary:
       "Phase I of Parjane's master-planned township in Usarl Khurd, Panvel, delivering coordinated community infrastructure and comfortable family homes.",
     overview: [
@@ -463,6 +474,7 @@ export const projects: Project[] = [
     area: "Phases II, III, IV & V",
     completion: "Delivered 2025",
     image: sukhshant2Aerial,
+    video: "/videos/projects/sukhshant-nagar-phases-2-5.mp4",
     summary:
       "A monumental 10-year execution journey culminating in the delivery of Phases II through V, completing a flourishing residential township at Usarl Khurd.",
     overview: [
@@ -498,6 +510,7 @@ export const projects: Project[] = [
     area: "G + 4 / G + 7 Storey",
     completion: "Delivered 2021",
     image: mangalResidencyElevation,
+    video: "/videos/projects/mangal-murti-residency.mp4",
     summary:
       "Delivered in 2021 in Karanjade Sector 1, Mangal Murti Residency initiated Parjane's prestigious four-project series in the node.",
     overview: [
@@ -530,6 +543,7 @@ export const projects: Project[] = [
     area: "Modern Residential Block",
     completion: "Delivered 2021",
     image: mangalNiwasElevation,
+    video: "/videos/projects/mangal-murti-mangal-niwas.mp4",
     summary:
       "Completed in 2021 on Plot No. 303 in Sector R3 Karanjade, offering well-ventilated residences with prime road frontage.",
     overview: [
@@ -560,6 +574,7 @@ export const projects: Project[] = [
     area: "Corner Plot Development",
     completion: "Delivered 2022",
     image: mangalAdhisthanElevation,
+    video: "/videos/projects/mangal-murti-adhisthan.mp4",
     summary:
       "A corner-plot residential landmark handed over in 2022 on Plot No. 3, Sector R4 Karanjade, providing dual-road frontage and open vistas.",
     overview: [
@@ -592,6 +607,7 @@ export const projects: Project[] = [
     area: "Prime Sector R3 Plot",
     completion: "Delivered 2023",
     image: images.crestVillas3d,
+    video: "/videos/projects/mangal-murti-darshan.mp4",
     summary:
       "The latest delivered project in the Mangal Murti series (2023), completing a proud cluster of residential excellence in Karanjade.",
     overview: [
